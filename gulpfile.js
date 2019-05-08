@@ -5,7 +5,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var cmq = require('gulp-combine-media-queries');//@media
 
 gulp.task('sass', function () {
-    gulp.src('sass/*.scss')
+    gulp.src('src/css/*.sass')
         .pipe(sourcemaps.init())
         .pipe(plumber())
         .pipe(sass({ style: 'expanded' }))
@@ -14,7 +14,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('cmq', function () {
-    gulp.src('css/*.css')
+    gulp.src('src/css/*.css')
         .pipe(cmq({
             log: false
         }))
