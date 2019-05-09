@@ -1,3 +1,12 @@
+html {
+  font-size: 62.5%; }
+
 body {
   font: 100% Helvetica, sans-serif;
-  color: #333; }
+  color: #333;
+  line-height: 1.5; }
+
+header ul {
+  background-color: #333333;
+  color: #ffffff;
+  line-height: 2.7; }

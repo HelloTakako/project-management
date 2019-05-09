@@ -2,7 +2,6 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var plumber = require('gulp-plumber');
 var sourcemaps = require('gulp-sourcemaps');
-var cmq = require('gulp-combine-media-queries');//@media
 
 gulp.task('sass', function () {
     gulp.src('src/css/*.sass')
@@ -13,15 +12,7 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('css'));
 });
 
-gulp.task('cmq', function () {
-    gulp.src('src/css/*.css')
-        .pipe(cmq({
-            log: false
-        }))
-        .pipe(gulp.dest('css'));
-});
-
 gulp.task('watch', function () {
     gulp.watch('src/css/*.sass', ['sass']);
 });
-gulp.task('default', ['sass', 'cmq']);
+gulp.task('default', 'sass');
