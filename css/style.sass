@@ -5,7 +5,7 @@ $font-stack:    Helvetica, sans-serif
 $color-yellow: #ede05c
 $color-lightblue: #86cad6
 $color-grey: #221f20
-$color-text-main: #333
+$color-white: #fff
 $padding-main: 30px
 
 // Mixins
@@ -14,6 +14,13 @@ $padding-main: 30px
   -moz-border-radius: $radius
   -ms-border-radius: $radius
   border-radius: $radius
+
+@mixin flexbox()
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
 
 // Import
 
@@ -27,16 +34,17 @@ a
 body
   font: 100% $font-stack
   font-size: 1.6rem
-  color: $color-text-main
+  color: $color-grey
   line-height: 1.5
 
 #wrapper_inner
-  width: 1200px
+  width: 100%
 
-header ul
+header ul,
+footer ul
   background-color: $color-yellow
   line-height: 2.7
-  display: flex
+  @include flexbox()
   flex-direction: row
 
   li a
@@ -47,3 +55,18 @@ header ul
     @include border-radius(10px)
     text-align: center
     padding: 10px
+
+  // slide gallery
+#home-slide
+  li
+    width: 100%
+    height: 300px
+    overflow: hidden
+
+// columns
+.col-2
+  @include flexbox()
+  flex-direction: row
+.col-2>*
+  width: 46%
+  padding: 2%
