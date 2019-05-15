@@ -40,6 +40,17 @@ body
 #wrapper_inner
   width: 100%
 
+// header
+header
+  .header-top
+    @include flexbox()
+    background-color: $color-yellow
+
+    h1
+      text-align: center
+      font-size: 3rem
+      font-weight: bold  
+
 header ul,
 footer ul
   background-color: $color-yellow
@@ -58,10 +69,12 @@ footer ul
 
   // slide gallery
 #home-slide
+  width: 100%
+  height: 300px
+  overflow: hidden
+
   li
-    width: 100%
-    height: 300px
-    overflow: hidden
+    float: left
 
 // columns
 .col-2
