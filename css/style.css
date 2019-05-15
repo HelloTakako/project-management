@@ -1,0 +1,33 @@
+html {
+  font-size: 62.5%; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font: 100% Helvetica, sans-serif;
+  font-size: 1.6rem;
+  color: #333;
+  line-height: 1.5; }
+
+#wrapper_inner {
+  width: 1200px; }
+
+header ul {
+  background-color: #ede05c;
+  line-height: 2.7;
+  display: flex;
+  flex-direction: row; }
+  header ul li a {
+    color: #fff;
+    display: block;
+    width: 100px;
+    background-color: #86cad6;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px; }
+
+/*# sourceMappingURL=style.css.map */
