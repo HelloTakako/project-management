@@ -1,11 +1,27 @@
 'use strict';
 
-window.onload = function() {
-    const slides = document.getElementById("home-slide");
 
-    function slider(){
-        console.log(slides.children);    
-    }
 
-    // setInterval(slider, 3000);
+// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1};
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }    
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";  
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
+
+
+    
