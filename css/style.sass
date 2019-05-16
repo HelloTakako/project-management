@@ -24,7 +24,22 @@ $padding-main: 30px
 
 // Import
 
+// heading tags
+h1
+  text-align: center
+  font-size: 6rem
+  color: $color-grey
+  text-shadow: 3px 3px 0 $color-yellow
+  font-weight: bold
+  font-family: 'Lobster', cursive
+  line-height: 1.1
 
+h2
+  text-align: center
+  font-size: 3rem
+  font-weight: bold  
+
+// generals
 html
   font-size: 62.5%
 
@@ -43,29 +58,27 @@ body
 // header
 header
   .header-top
+    width: 100%
+    padding: 30px
     @include flexbox()
-    background-color: $color-yellow
-
-    h1
-      text-align: center
-      font-size: 3rem
-      font-weight: bold  
+    justify-content: space-between
+    background-color: $color-lightblue
 
 header ul,
 footer ul
+  width: 100%
   background-color: $color-yellow
   line-height: 2.7
   @include flexbox()
   flex-direction: row
 
   li a
-    color: #fff
+    color: darken($color-yellow, 50%)
     display: block
     width: 100px
-    background-color: $color-lightblue
-    @include border-radius(10px)
     text-align: center
     padding: 10px
+    font-weight: bold
 
   // slide gallery
 #home-slide
