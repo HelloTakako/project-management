@@ -43,7 +43,12 @@ body
   line-height: 1.6
 
 #wrapper_inner
-  width: 100%
+  width: 100vw
+  overflow: hidden
+
+section
+  width: 80vw
+  margin: 0 auto
 
 // heading tags
 h1 img
@@ -178,3 +183,16 @@ footer
     padding: 10px 40px
     text-align: center
     font-weight: bold
+
+  // vendors page
+  
+  .col-3
+    +flexbox()
+
+    .image-truck
+      width: 100px
+      height: 100px
+      overflow: hidden
+      img
+        width: 100px
+        height: 100px

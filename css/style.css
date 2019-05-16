@@ -11,7 +11,12 @@ body {
   line-height: 1.6; }
 
 #wrapper_inner {
-  width: 100%; }
+  width: 100vw;
+  overflow: hidden; }
+
+section {
+  width: 80vw;
+  margin: 0 auto; }
 
 h1 img {
   width: 410px;
@@ -146,5 +151,18 @@ footer {
     padding: 10px 40px;
     text-align: center;
     font-weight: bold; }
+  footer .col-3 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    footer .col-3 .image-truck {
+      width: 100px;
+      height: 100px;
+      overflow: hidden; }
+      footer .col-3 .image-truck img {
+        width: 100px;
+        height: 100px; }
 
 /*# sourceMappingURL=style.css.map */
