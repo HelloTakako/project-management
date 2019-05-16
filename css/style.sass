@@ -93,15 +93,15 @@ footer ul
   background-color: $color-yellow
   line-height: 2.7
   @include flexbox()
-  justify-content: space-evenly
+  justify-content: center
   flex-direction: row
 
   li a
     color: darken($color-yellow, 50%)
     display: block
-    width: 100px
+    font-size: 1.8rem
+    padding: 10px 40px
     text-align: center
-    padding: 10px
     font-weight: bold
 
   // slide gallery
@@ -113,6 +113,9 @@ footer ul
 
   li
     float: left
+  
+    img
+      width: 100vw
 
 // columns
 .col-2
