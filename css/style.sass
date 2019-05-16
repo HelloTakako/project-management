@@ -22,7 +22,28 @@ $padding-main: 30px
   display: -webkit-flex
   display: flex
 
-// Import
+@mixin rotate($degrees)
+    -webkit-transform: rotate($degrees)
+    -moz-transform: rotate($degrees)
+    -ms-transform: rotate($degrees)
+    -o-transform: rotate($degrees)
+    transform: rotate($degrees)
+
+// generals
+html
+  font-size: 62.5%
+
+a
+  text-decoration: none
+
+body
+  font: 100% $font-stack
+  font-size: 1.6rem
+  color: $color-grey
+  line-height: 1.5
+
+#wrapper_inner
+  width: 100%
 
 // heading tags
 h1 img
@@ -46,22 +67,6 @@ h2
   font-weight: bold
   position: relative 
 
-// generals
-html
-  font-size: 62.5%
-
-a
-  text-decoration: none
-
-body
-  font: 100% $font-stack
-  font-size: 1.6rem
-  color: $color-grey
-  line-height: 1.5
-
-#wrapper_inner
-  width: 100%
-
 // header
 header
   .header-top
@@ -71,13 +76,24 @@ header
     justify-content: space-evenly
     background-color: $color-lightblue
 
+  .event-date
+    font-size: 2.5rem
+    font-weight: bold
+    background-color: $color-grey
+    color: $color-white
+    padding: 10px
+    height: 100%
+    margin-top: 20px
+    @include rotate(20deg)
+    @include border-radius(10px)
+
 header ul,
 footer ul
   width: 100%
   background-color: $color-yellow
   line-height: 2.7
   @include flexbox()
-  justify-content: center
+  justify-content: space-evenly
   flex-direction: row
 
   li a
