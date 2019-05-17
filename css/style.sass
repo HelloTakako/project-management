@@ -51,9 +51,8 @@ section
   margin: 0 auto 30px
 
 // heading tags
-h1 img
-  width: 410px
-  display: block
+h1
+  width: 410px / 1200px * 100%
 
 // just in case h1
 h1.h1-text
@@ -114,9 +113,9 @@ header
   .event-date
     font-size: 2.5rem
     font-weight: bold
-    background-color: $color-grey
-    color: $color-white
-    padding: 10px
+    background-color: $color-yellow
+    color: darken($color-yellow, 30%)
+    padding: 10px 20px
     height: 100%
     margin-top: 20px
     +rotate(20deg)
@@ -246,3 +245,12 @@ footer
       height: 50px
       +border-radius(50%)
       margin-right: 10px
+
+//
+// media queries
+//
+
+$break-small: 480px
+$break-large: 1201px
+
+
