@@ -215,9 +215,15 @@ footer
   padding: 10px 0 30px
   background-color: $color-yellow
 
+  @media only screen and (max-width: $break-small)
+      padding-bottom: 10px
+
   ul
     @extend %nav-ul
     margin-bottom: 0
+
+    @media only screen and (max-width: $break-small)
+      display: none
 
   li a
     color: darken($color-yellow, 50%)

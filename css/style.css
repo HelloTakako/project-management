@@ -179,8 +179,14 @@ header ul li a {
 footer {
   padding: 10px 0 30px;
   background-color: #ede05c; }
+  @media only screen and (max-width: 480px) {
+    footer {
+      padding-bottom: 10px; } }
   footer ul {
     margin-bottom: 0; }
+    @media only screen and (max-width: 480px) {
+      footer ul {
+        display: none; } }
   footer li a {
     color: #433d07;
     display: block;
