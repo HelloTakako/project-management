@@ -111,15 +111,6 @@ header
     justify-content: space-evenly
     background-color: $color-lightblue
 
-  .header-logo
-    display: block
-    width: 300px / $default-width * 100%
-    a
-      display: block
-      width: inherit
-      img
-        width: inherit
-
   .event-date
     font-size: 2.5rem
     font-weight: bold
@@ -130,6 +121,8 @@ header
     margin-top: 20px
     +rotate(20deg)
     +border-radius(10px)
+  .header-logo
+    width: 150px / $default-width * 100%
 
 header ul
   @extend %nav-ul

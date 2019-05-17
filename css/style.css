@@ -81,14 +81,6 @@ header .header-top {
   display: flex;
   justify-content: space-evenly;
   background-color: #86cad6; }
-header .header-logo {
-  display: block;
-  width: 25%; }
-  header .header-logo a {
-    display: block;
-    width: inherit; }
-    header .header-logo a img {
-      width: inherit; }
 header .event-date {
   font-size: 2.5rem;
   font-weight: bold;
@@ -106,6 +98,8 @@ header .event-date {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   border-radius: 10px; }
+header .header-logo {
+  width: 12.5%; }
 
 header ul li a {
   color: #433d07;
