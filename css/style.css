@@ -81,6 +81,14 @@ header .header-top {
   display: flex;
   justify-content: space-evenly;
   background-color: #86cad6; }
+header .header-logo {
+  display: block;
+  width: 25%; }
+  header .header-logo a {
+    display: block;
+    width: inherit; }
+    header .header-logo a img {
+      width: inherit; }
 header .event-date {
   font-size: 2.5rem;
   font-weight: bold;

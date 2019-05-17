@@ -6,6 +6,7 @@ $color-yellow: #ede05c
 $color-lightblue: #86cad6
 $color-grey: #221f20
 $color-white: #fff
+$default-width : 1200px
 $padding-main: 30px
 
 // Mixins
@@ -52,7 +53,7 @@ section
 
 // heading tags
 h1
-  width: 410px / 1200px * 100%
+  width: 410px / $default-width * 100%
 
 // just in case h1
 h1.h1-text
@@ -109,6 +110,15 @@ header
     +flexbox()
     justify-content: space-evenly
     background-color: $color-lightblue
+
+  .header-logo
+    display: block
+    width: 300px / $default-width * 100%
+    a
+      display: block
+      width: inherit
+      img
+        width: inherit
 
   .event-date
     font-size: 2.5rem
