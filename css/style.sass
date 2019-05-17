@@ -145,6 +145,9 @@ header
 header ul
   @extend %nav-ul
 
+  @media only screen and (max-width: $break-small)
+    flex-wrap: wrap
+
   li a
     color: darken($color-yellow, 50%)
     display: block
@@ -152,6 +155,8 @@ header ul
     padding: 10px 40px
     text-align: center
     font-weight: bold
+
+      
 
 // slide gallery
 .slide-gallery

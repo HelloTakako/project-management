@@ -112,6 +112,9 @@ header .header-logo {
     header .header-logo a img {
       width: 100%; }
 
+@media only screen and (max-width: 480px) {
+  header ul {
+    flex-wrap: wrap; } }
 header ul li a {
   color: #433d07;
   display: block;
