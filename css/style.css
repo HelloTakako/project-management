@@ -206,14 +206,17 @@ footer {
   display: flex;
   margin-bottom: 80px; }
   .col-3 .image-truck {
-    flex-basis: 38%; }
+    flex-basis: 38%;
+    width: 30vw;
+    height: 30vw;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden; }
     .col-3 .image-truck img {
       width: 30vw;
-      height: 30vw;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      border-radius: 50%; }
+      height: 30vw; }
   .col-3 .two-3rd {
     flex-basis: 60%; }
   .col-3 .r-3vw {
