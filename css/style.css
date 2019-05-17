@@ -52,8 +52,12 @@ h3 {
   color: #221f20;
   font-weight: bold;
   margin-bottom: 30px;
+  line-height: 1;
   border-left: 10px solid #ede05c;
   padding-left: 10px; }
+
+h3::first-letter {
+  font-size: 150%; }
 
 header ul, footer ul {
   width: 100%;
