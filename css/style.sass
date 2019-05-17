@@ -1,7 +1,7 @@
 @charset 'utf-8'
 
 // Variables
-$font-stack:    Helvetica, sans-serif
+$font-stack: -system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
 $color-yellow: #ede05c
 $color-lightblue: #86cad6
 $color-grey: #221f20
@@ -48,7 +48,7 @@ body
 
 section
   width: 80vw
-  margin: 0 auto
+  margin: 0 auto 30px
 
 // heading tags
 h1 img
@@ -65,12 +65,28 @@ h1.h1-text
   font-family: 'Lobster', cursive
   line-height: 1.1
 
+
 h2
-  text-align: center
+  font-weight: bold
   font-size: 3.5rem
+  margin: 0 auto 50px
+  padding: 5px 30px
+  color: $color-grey
+  text-align: center
+  text-shadow: 3px 3px 0 $color-yellow
+  font-weight: bold
+  font-family: 'Lobster', cursive
+  +border-radius(10px)
+  display: block
+
+h3
+  font-size: 2.5rem
   color: $color-grey
   font-weight: bold
-  position: relative 
+  margin-bottom: 30px
+  border-left: 10px solid $color-yellow
+  padding-left: 10px
+
 
 // for navigation links
 %nav-ul
@@ -80,6 +96,7 @@ h2
   +flexbox()
   justify-content: center
   flex-direction: row
+  margin-bottom: 40px
 
 // header
 header
@@ -114,7 +131,7 @@ header ul
 
 // slide gallery
 .slide-gallery
-  margin-bottom: 20px 
+  margin: -40px 0 20px 
   #home-slide
     width: 100%
     height: 300px
@@ -174,7 +191,8 @@ footer
   background-color: $color-yellow
 
   ul
-  @extend %nav-ul
+    @extend %nav-ul
+    margin-bottom: 0
 
   li a
     color: darken($color-yellow, 50%)
@@ -184,15 +202,43 @@ footer
     text-align: center
     font-weight: bold
 
-  // vendors page
-  
-  .col-3
-    +flexbox()
+  .icon-sm
+    margin-bottom: 20px
+    li a
+      padding: 0px 20px
+      font-size: 3.5rem
+      line-height: 0
 
-    .image-truck
-      width: 100px
-      height: 100px
-      overflow: hidden
-      img
-        width: 100px
-        height: 100px
+  small
+    text-align: center
+    display: block
+
+  //
+  // vendors page
+  //
+.col-3
+  +flexbox()
+  margin-bottom: 80px
+
+  .image-truck
+    flex-basis: 38vw
+    /* width: 35vw */
+    height: 30vw
+    +border-radius(50%)
+    overflow: hidden
+    img
+      width: 100%
+
+  .two-3rd
+    flex-basis: 60vw
+  .r-3vw
+    margin-right: 3vw
+
+  .diet
+    margin-top: 10px
+    img
+      display: inline-block
+      width: 50px
+      height: 50px
+      +border-radius(50%)
+      margin-right: 10px

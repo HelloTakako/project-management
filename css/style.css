@@ -5,7 +5,7 @@ a {
   text-decoration: none; }
 
 body {
-  font: 100% Helvetica, sans-serif;
+  font: 100% -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.6rem;
   color: #221f20;
   line-height: 1.6; }
@@ -16,7 +16,7 @@ body {
 
 section {
   width: 80vw;
-  margin: 0 auto; }
+  margin: 0 auto 30px; }
 
 h1 img {
   width: 410px;
@@ -32,13 +32,30 @@ h1.h1-text {
   line-height: 1.1; }
 
 h2 {
-  text-align: center;
+  font-weight: bold;
   font-size: 3.5rem;
+  margin: 0 auto 50px;
+  padding: 5px 30px;
+  color: #221f20;
+  text-align: center;
+  text-shadow: 3px 3px 0 #ede05c;
+  font-weight: bold;
+  font-family: "Lobster", cursive;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  display: block; }
+
+h3 {
+  font-size: 2.5rem;
   color: #221f20;
   font-weight: bold;
-  position: relative; }
+  margin-bottom: 30px;
+  border-left: 10px solid #ede05c;
+  padding-left: 10px; }
 
-header ul, footer {
+header ul, footer ul {
   width: 100%;
   background-color: #ede05c;
   line-height: 2.7;
@@ -48,7 +65,8 @@ header ul, footer {
   display: -webkit-flex;
   display: flex;
   justify-content: center;
-  flex-direction: row; }
+  flex-direction: row;
+  margin-bottom: 40px; }
 
 header .header-top {
   width: 100%;
@@ -87,7 +105,7 @@ header ul li a {
   font-weight: bold; }
 
 .slide-gallery {
-  margin-bottom: 20px; }
+  margin: -40px 0 20px; }
   .slide-gallery #home-slide {
     width: 100%;
     height: 300px;
@@ -144,6 +162,8 @@ header ul li a {
 
 footer {
   background-color: #ede05c; }
+  footer ul {
+    margin-bottom: 0; }
   footer li a {
     color: #433d07;
     display: block;
@@ -151,18 +171,48 @@ footer {
     padding: 10px 40px;
     text-align: center;
     font-weight: bold; }
-  footer .col-3 {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex; }
-    footer .col-3 .image-truck {
-      width: 100px;
-      height: 100px;
-      overflow: hidden; }
-      footer .col-3 .image-truck img {
-        width: 100px;
-        height: 100px; }
+  footer .icon-sm {
+    margin-bottom: 20px; }
+    footer .icon-sm li a {
+      padding: 0px 20px;
+      font-size: 3.5rem;
+      line-height: 0; }
+  footer small {
+    text-align: center;
+    display: block; }
+
+.col-3 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 80px; }
+  .col-3 .image-truck {
+    flex-basis: 38vw;
+    /* width: 35vw */
+    height: 30vw;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden; }
+    .col-3 .image-truck img {
+      width: 100%; }
+  .col-3 .two-3rd {
+    flex-basis: 60vw; }
+  .col-3 .r-3vw {
+    margin-right: 3vw; }
+  .col-3 .diet {
+    margin-top: 10px; }
+    .col-3 .diet img {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      margin-right: 10px; }
 
 /*# sourceMappingURL=style.css.map */
