@@ -8,7 +8,9 @@ body {
   font: 100% -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.6rem;
   color: #221f20;
-  line-height: 1.6; }
+  line-height: 1.6;
+  width: 100vw;
+  overflow: hidden; }
 
 #wrapper_inner {
   width: 100vw;
@@ -100,6 +102,11 @@ header .event-date {
   border-radius: 10px; }
 header .header-logo {
   width: 12.5%; }
+  header .header-logo a {
+    display: block;
+    width: 100%; }
+    header .header-logo a img {
+      width: 100%; }
 
 header ul li a {
   color: #433d07;
