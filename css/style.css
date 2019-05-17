@@ -21,7 +21,10 @@ section {
   margin: 0 auto 30px; }
 
 h1 {
-  width: 34.1666666667%; }
+  width: 34.1666666667%;
+  margin-right: 30px; }
+  h1 img {
+    width: 100%; }
 
 h1.h1-text {
   text-align: center;
@@ -81,6 +84,7 @@ header .header-top {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  align-self: center;
   justify-content: center;
   background-color: #86cad6; }
 header .event-date {
@@ -88,6 +92,7 @@ header .event-date {
   font-weight: bold;
   background-color: #ede05c;
   color: #9e9212;
+  line-height: 1.2;
   padding: 10px 20px;
   height: 100%;
   margin-top: 20px;
