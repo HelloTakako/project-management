@@ -206,9 +206,9 @@ footer {
   display: flex;
   margin-bottom: 80px; }
   .col-3 .image-truck {
-    flex-basis: 38vw;
+    flex-basis: 38%;
     /* width: 35vw */
-    height: 30vw;
+    height: 30%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -217,9 +217,9 @@ footer {
     .col-3 .image-truck img {
       width: 100%; }
   .col-3 .two-3rd {
-    flex-basis: 60vw; }
+    flex-basis: 60%; }
   .col-3 .r-3vw {
-    margin-right: 3vw; }
+    margin-right: 3%; }
   .col-3 .diet {
     margin-top: 10px; }
     .col-3 .diet img {
