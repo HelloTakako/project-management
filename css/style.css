@@ -178,7 +178,11 @@ header ul li a {
   .col-2 img {
     width: 80%;
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    border-radius: 40px; }
 
 footer {
   padding: 10px 0 30px;
@@ -216,7 +220,6 @@ footer {
   display: flex;
   margin-bottom: 80px; }
   .col-3 .image-truck {
-    flex-basis: 38%;
     width: 30vw;
     height: 30vw;
     -webkit-border-radius: 50%;
@@ -256,7 +259,8 @@ footer {
   transition: 0.4s;
   font-size: 1.6rem;
   margin: 0 auto;
-  display: block; }
+  display: block;
+  font-weight: bold; }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active {
@@ -267,14 +271,14 @@ footer {
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 3%;
   background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  line-height: 1.5;
   width: 74%;
   margin: 0 auto; }
+  .panel p {
+    padding: 20px 20px 40px; }
 
 .accordion:after {
   content: "➕";
@@ -285,5 +289,24 @@ footer {
 
 button .active:after {
   content: "➖"; }
+
+.ent-intro {
+  width: 80%;
+  margin: 0 auto 100px; }
+
+#application {
+  width: 700px;
+  margin: 0 auto;
+  line-height: 3; }
+  #application label {
+    width: 165px;
+    display: inline-block;
+    padding: 5px 10px;
+    border-left: 10px solid #86cad6; }
+  #application input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #888;
+    width: 470px; }
 
 /*# sourceMappingURL=style.css.map */
