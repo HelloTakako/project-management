@@ -286,14 +286,10 @@ footer small {
   margin-bottom: 80px;
 }
 
-.col-3 .image-truck {
-  overflow: hidden;
-}
-
 .col-3 .image-truck img {
   border-radius: 50%;
-  width: 30vw;
-  height: 30vw;
+  width: 20vw;
+  height: 20vw;
 }
 
 .col-3 .two-3rd {
