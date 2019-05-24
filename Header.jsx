@@ -1,5 +1,3 @@
-
-
 function Header() {
     return (
         <div>
@@ -12,11 +10,11 @@ function Header() {
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About{msg}</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="vendors.html">Trucks</a></li>
-                        <li><a href="#">Entertainment</a></li>
-                        <li><a href="#">Apply</a></li>
-                        <li><a href="#">Map</a></li>
+                        <li><a href="entertainment.html">Entertainment</a></li>
+                        <li><a href="apply.html">Apply</a></li>
+                        <li><a href="map.htmlss">Map</a></li>
                     </ul>
                 </nav>
             </header>
