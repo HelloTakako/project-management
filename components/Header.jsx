@@ -14,7 +14,7 @@ function Header() {
                         <li><a href="vendors.html">Trucks</a></li>
                         <li><a href="entertainment.html">Entertainment</a></li>
                         <li><a href="apply.html">Apply</a></li>
-                        <li><a href="map.htmlss">Map</a></li>
+                        <li><a href="map.html">Map</a></li>
                     </ul>
                 </nav>
             </header>

@@ -283,7 +283,7 @@ footer {
   float: right;
   margin-left: 5px; }
 
-.active:after {
+button .active:after {
   content: "➖"; }
 
 /*# sourceMappingURL=style.css.map */

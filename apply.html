@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>West Coast Food Truck Festival | About</title>
+    <title>West Coast Food Truck Festival | Apply</title>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="./css/reset.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
@@ -27,43 +27,35 @@
             <div id="app"></div>
             <main>
                 <section>
-                    <h2>About the West Coast Food Truck Festival</h2>
-                    <!-- accordion menu -->
-
-                    <button class="accordion">When and Where</button>
-                    <div class="panel">
-                    <p>
-                        Stanley Park<br>
-                        X Parking Lot<br>
-                        July 19th-21th 2019<br>
-                        <a href="map.html">For more information, see map.</a>
-                    </p>
-                    </div>
-
-                    <button class="accordion">Accessibility</button>
-                    <div class="panel">
-                    <p>The Greater Vancouver Food Truck Festival is dedicated to accommodating out guests in the following ways: <br>
-                    <ul> 
-                        <li>Accessible parking located near the festival entrance</li>
-                        <li>Designated wheelchair areas in the audience with clear stage visibility</li>
-                        <li>Wheelchair accessible washrooms</li>
-                        <li>Detachable card readers to facilitate credit/debit payment</li>
-                        <li>Festival attendants will be available to answer questions and help with accessibility</li>
-                    </ul>
-                    If you have any questions or concerns about accessibility at the festival, please email contact@wcftf.ca and we’d be happy to offer our support!
-                    </p>
-                    </div>
-
-                    <button class="accordion">For Children</button>
-                    <div class="panel">
-                    <p>All our performance are kid friendly! We also have amazing options for kids such as Connor’s Creamery’s blue drizzle cones or Fish & Chips kids size meal featuring cod or halibut. You also can not go wrong with Burger Shake, which also has a kids menu, burgers, fries and shakes that no kid can resist. 
-                    </p>
-                    </div>
-
-                    <!-- <button class="accordion">FAQ</button>
-                    <div class="panel">
-                    <p>Lorem ipsum...</p>
-                    </div> -->
+                    <h2>Food Truck Application</h2>
+                    
+                    <!-- Form -->
+                    <form id="application" method="post" action="#">
+                        <!-- Truck Name -->
+                        <label for="t-name">Truck Name:</label>
+                        <input type="text" name="t-name" id="t-name" required="required" class="form" placeholder="Truck Name" />
+                        <!-- Vendor Name -->
+                        <label for="v-name">Vendor Name:</label>
+                        <input type="text" name="v-name" id="v-name" required="required" class="form" placeholder="Vendor Name" />
+                        <!-- Phone -->
+                        <label for="v-name">Phone:</label>
+                        <input type="number" name="phone" id="phone" required="required" class="form" />
+                        <!-- Email -->
+                        <label for="mail">Email:</label>
+                        <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+                        <!-- Type of Food -->
+                        <label for="food">Type of Food:</label>
+                        <input type="text" name="food" id="food" required="required" class="form" placeholder="e.g. Hot Dogs" />
+                        <!-- Permit -->
+                        <label for="permit">Permit:</label>
+                        <input type="text" name="permit" id="permit" required="required" class="form" placeholder="" />
+                        <!-- Requirements -->
+                        <label for="req">Requirements:</label>
+                        <input type="text" name="req" id="req" required="required" class="form" placeholder="" />
+                        <!-- Questions/Comments -->
+                        <label for="qac">Questions/Comments:</label>
+                        <input type="text" name="qac" id="qac" required="required" class="form" placeholder="" />
+                    </form>
                 </section>
             </main>
             <footer>
