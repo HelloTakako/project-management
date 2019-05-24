@@ -393,6 +393,11 @@ button .active:after {
 }
 
 .map_img {
-  width: 1000px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.map_img img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
