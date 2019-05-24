@@ -1,4 +1,4 @@
-function Header() {
+function Footer() {
     return (
         <div>
             <footer>
@@ -13,9 +13,9 @@ function Header() {
                     </ul>
                 </nav>
                 <ul class="icon-sm">
-                    <li><a href=""><i class="fab fa-instagram"/></i></a></li>
-                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"/></a></li>
+                    <li><a href=""><i class="fab fa-facebook-square"/></a></li>
+                    <li><a href=""><i class="fab fa-twitter"/></a></li>
                 </ul>
                 <small>&copy;WCTruckFest</small>
             </footer>

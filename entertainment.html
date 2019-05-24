@@ -11,29 +11,20 @@
     <link href="./css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="manifest" href="/manifest.json">
+<!--  -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<!--  -->
+    <script type="text/babel" src="Header.jsx" defer></script>
+    <script type="text/babel" src="main.jsx" defer></script>
 </head>
 
 <body>
     <div id="wrapper">
         <div id="wrapper_inner">
-            <header>
-                <div class="header-top">
-                <p class="header-logo"><a href="index.html"><img src="images/logo.svg" alt="logo"></a></p>
-                <h1><img src="images/h1.svg" alt="West Coast Food Truck Festival"></h1>
-                <!-- <h1 class="h1-text">West Coast<br>Food Truck Festival</h1> -->
-                <p class="event-date">July<br>19th - 21st<br>Stanley Park</p>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="vendors.html">Trucks</a></li>
-                        <li><a href="#">Entertainment</a></li>
-                        <li><a href="#">Apply</a></li>
-                        <li><a href="#">Map</a></li>
-                    </ul>
-                </nav>
-            </header>
+            <div id="app"></div>
+            
             <main>
                 <section>
                     <h2>This Year's Trucks</h2>
